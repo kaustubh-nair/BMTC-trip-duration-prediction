@@ -1,0 +1,6 @@
+name: bmtc
+channels:
+  - defaults
+dependencies:
+  - pycodestyle=2.5.0=py37_0
+  - python=3.7.4=h265db76_1
