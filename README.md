@@ -3,7 +3,7 @@ ML model to predict time taken for a bus trip :fireworks:
 
 ## Installation
 
-Make sure w1.csv is in the `dataset` folder
+Make sure `w1.csv` is in the `dataset` folder
 
 To install the conda  environment
 ```
