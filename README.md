@@ -15,6 +15,12 @@ To update your environment from the yml file
 conda env update -f environment.yml
 ```
 
+To activate a conda environment
+```
+conda activate
+```
+
+
 The PEP8 styleguide will be used for this project. Run this before making every commit.
 ``` 
 pycodestyle src
