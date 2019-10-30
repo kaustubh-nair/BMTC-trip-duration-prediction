@@ -1,4 +1,5 @@
 dataset/w1.csv
+dataset/medium.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
