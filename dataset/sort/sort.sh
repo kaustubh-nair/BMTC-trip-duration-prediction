@@ -1,6 +1,2 @@
 # sort the dataset based on the first and sixth  columns
-
-split -b250M ../small.csv chunk
-for f in chunk*; do sort -t, --parallel=4 -k1,1n -k6,6 -s "$f" > "$f".sorted && rm "$f"; done
-sort -T temp/ --parallel=4 -mo ../w1_sorted.csv -k1,1 -k6,6 --stable chunk*.sorted
-rm chunk*
+sort -T temp/ -o ../small_sor.csv -s -k1,1n -k6.9,6.10n -k6.12,6.13n -k6.15,6.16n -k6.18,6.19n  ../small.csv
