@@ -1,5 +1,7 @@
 dataset/w1_sorted.csv
 dataset/w1.csv
+dataset/w1*
+dataset/w1.csv.sorted
 dataset/medium.csv
 
 # Byte-compiled / optimized / DLL files

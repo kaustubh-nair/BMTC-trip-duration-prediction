@@ -2,7 +2,7 @@ import folium
 import pandas as pd
 import numpy as np
 
-dtypes = {'BusID': np.int32, 'LAT': np.float32, 'LON': np.float32, 'Angle': np.float32, 'Speed': np.float32, 'Timestamp': 'str'}
+dtypes = {'BusID': np.int32, 'LAT': np.float64, 'LON': np.float64, 'Angle': np.float32, 'Speed': np.float32, 'Timestamp': 'str'}
 df = pd.read_csv('../dataset/small_sorted.csv', dtype=dtypes)
 
 i = 0
