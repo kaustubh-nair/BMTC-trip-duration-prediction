@@ -3,7 +3,7 @@ import numpy as np
 
 zerovalues = [0, 0, 0]
 
-df = pd.read_csv("../dataset/small.csv.sorted", chunksize=1000)
+df = pd.read_csv("../dataset/small.csv", chunksize=1000)
 
 for chunk in df:
     print(chunk.size)
