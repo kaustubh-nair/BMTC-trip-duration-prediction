@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 dtypes = {'BusID': np.int32, 'LAT': np.float64, 'LON': np.float64, 'Angle': np.int32, 'Speed': np.int32, 'Timestamp': 'str'}
-large_frame = pd.read_csv("../dataset/w1.csv", chunksize=3000000,dtype=dtypes)
-with open("../dataset/cleaned_w1.csv", "a") as f:
+large_frame = pd.read_csv("../dataset/small.csv", chunksize=3000000,dtype=dtypes)
+with open("../dataset/cleaned_small.csv", "a") as f:
 
     f.write("BusID,LAT,LON,Angle,Speed,Timestamp\n")
     for df in large_frame:

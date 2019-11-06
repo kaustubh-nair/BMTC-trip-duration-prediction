@@ -3,7 +3,7 @@ import numpy as np
 
 with pd.option_context('display.precision', 10):
     dtypes = {'BusID': np.int32, 'LAT': np.float64, 'LON': np.float64, 'Angle': np.float32, 'Speed': np.float32, 'Timestamp': 'str'}
-    df = pd.read_csv("../dataset/small.csv", chunksize=100000,dtype=dtypes)
+    df = pd.read_csv("../dataset/small.csv", chunksize=100000, dtype=dtypes)
 
     for chunk in df:
         print(chunk)
