@@ -25,11 +25,11 @@ def calculateDirection(angle):
         return 'S'
 
 for i in range(len(df)-1):
-    df.loc[i, "LAT2"] = df.loc[i+1, "LAT1"]
-    df.loc[i, "LON2"] = df.loc[i+1, "LON1"]
-    df.loc[i, "Timestamp2"] = df.loc[i+1, "Timestamp1"]
-    df.loc[i, "Angle"] = angleFromCoordinate(df.loc[i, "LAT1"], df.loc[i, "LON1"], df.loc[i, "LAT2"], df.loc[i, "LON2"])
-    df.loc[i, "Direction"] = calculateDirection(df.loc[i, "Angle"])
+    df.at[i, "LAT2"] = df.loc[i+1, "LAT1"]
+    df.at[i, "LON2"] = df.loc[i+1, "LON1"]
+    df.at[i, "Timestamp2"] = df.loc[i+1, "Timestamp1"]
+    df.at[i, "Angle"] = angleFromCoordinate(df.loc[i, "LAT1"], df.loc[i, "LON1"], df.loc[i, "LAT2"], df.loc[i, "LON2"])
+    df.at[i, "Direction"] = calculateDirection(df.loc[i, "Angle"])
 
 df = df.head(len(df)-1)
 
