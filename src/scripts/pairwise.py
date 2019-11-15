@@ -31,8 +31,8 @@ for i in range(len(df)-1):
     df.loc[i, "Angle"] = angleFromCoordinate(df.loc[i, "LAT1"], df.loc[i, "LON1"], df.loc[i, "LAT2"], df.loc[i, "LON2"])
     df.loc[i, "Direction"] = calculateDirection(df.loc[i, "Angle"])
 
+df = df.head(len(df)-1)
+
 with open("pairwise_dataset.csv", "a") as f:
     f.write("BusID,LAT1,LON1,Timestamp1,LAT2,LON2,Timestamp2,Angle,Direction\n")
     df.to_csv(f, header=False, index=False,float_format="%.6f")
-
-            
