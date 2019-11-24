@@ -4,6 +4,7 @@ dataset/w1.csv
 dataset/w1*
 dataset/w1.csv.sorted
 dataset/medium.csv
+dataset/*.csv
 dataset/test.csv
 
 # Byte-compiled / optimized / DLL files
