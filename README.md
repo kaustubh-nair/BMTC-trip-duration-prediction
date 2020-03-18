@@ -1,1 +1,8 @@
 ![alt text](report/report-1.jpg)
+![alt text](report/report-2.jpg)
+![alt text](report/report-3.jpg)
+![alt text](report/report-4.jpg)
+![alt text](report/report-5.jpg)
+![alt text](report/report-6.jpg)
+![alt text](report/report-7.jpg)
+![alt text](report/report-8.jpg)
